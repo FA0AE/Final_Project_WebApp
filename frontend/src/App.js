@@ -4,11 +4,11 @@ import React from 'react';
 
 import Navbar from "./components/navbar.jsx";
 import CreateActivity from "./components/create-activity.component.js";
-import ActivitiesList from "./components/activities-list.jsx";
-import EditActivity from "./components/edit-activity.jsx";
+import ActivitiesList from "./components/activities-list.component.js";
+import EditActivity from "./components/edit-activity.component.js";
 import CreateSubject from "./components/create-subject.component.js";
-import SubjectsList from "./components/subjects-list.jsx";
-import EditSubject from "./components/edit-subject.jsx";
+import SubjectsList from "./components/subjects-list.component.js";
+import EditSubject from "./components/edit-subject.component.js";
 
 function App() {
   return (

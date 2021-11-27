@@ -21,7 +21,7 @@ export default class CreateActivity extends Component {
             description: "",
             due_date: new Date(),
             subjects: []
-        }
+        };
     }
 
     componentDidMount() {
@@ -36,7 +36,7 @@ export default class CreateActivity extends Component {
                     subject_name: response.data[0].subject_name
                 })
             }
-        })
+        });
     };
 
     handleSubjectNameChange(event) {
@@ -78,7 +78,7 @@ export default class CreateActivity extends Component {
         // Send information to backend
         axios.post('http://localhost:8080/activities/add', added_activity)
         .then(response => console.log(response.data))
-        .catch(err => console.log(err))
+        .catch(err => console.log(err));
         
         window.location = '/';
 
