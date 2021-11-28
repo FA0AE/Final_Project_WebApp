@@ -10,9 +10,10 @@ const Activity = props => (
         <td>{ props.activity.due_date.substring(0, 10) }</td>
         <td>
             <Link to={ "/edit-activity/" + props.activity._id }> Edit Activity</Link> | 
-            <a href="/#" onClick={ () => { props.deleteActivity(props.activity._id) }}> Mark as complete</a>
+            <a href="/#" onClick={ () => { props.deleteActivity(props.activity._id) }}> Mark as complete</a>            
         </td>
     </tr>
+    // a href can be converted into a button since now it works like a link
 )
 
 export default class ActivitiesList extends Component {
@@ -58,7 +59,7 @@ export default class ActivitiesList extends Component {
     }
 
     render() {
-        return(
+        return (
             <div>
                 <h3>To do activities</h3>
                 <table className="table">
