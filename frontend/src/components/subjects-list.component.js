@@ -58,9 +58,9 @@ export default class SubjectsList extends Component {
 
     render() {
         return (
-            <div>
-                <h3>Subjects list</h3>
-                <table className="table">
+            <div className="mt-3">
+                <h3 className="d-flex justify-content-center">Subjects list</h3>
+                <table className="container table">
                     <thead className="thead-light">
                     <tr>
                         <th>Name</th>
@@ -72,9 +72,9 @@ export default class SubjectsList extends Component {
                         { this.displayList() }
                     </tbody>
                 </table>
-                <div>
+                <div className = "d-flex justify-content-center">
                     <Link to = "/create-subject" className = "nav-link">
-                    <button type="button" className="btn btn-primary">Create subject</button>
+                    <button type="button" className="btn btn-warning">Create subject</button>
                     </Link>
                 </div>
             </div>

@@ -77,8 +77,8 @@ export default function EditActivity(props) {
     }
 
     return (
-        <div className="container">
-            <h3>Edit an activity</h3>
+        <div className="container mt-3">
+            <h3 className="d-flex justify-content-center">Edit an activity</h3>
             <form onSubmit={ submitForm }>
                 <div className="form-group">
                     <label> Subject name: </label>
@@ -113,8 +113,8 @@ export default function EditActivity(props) {
                     </div>
                 </div>
 
-                <div className="form-group">
-                    <input type="submit" value="Update Activity" className = "btn btn-primary"/>
+                <div className="form-group d-flex justify-content-center">
+                    <input type="submit" value="Update Activity" className = "btn btn-warning"/>
                 </div>
             </form>
         </div>

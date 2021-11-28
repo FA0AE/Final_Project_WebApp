@@ -50,8 +50,8 @@ export default function CreateSubject(props) {
     }
 
     return (
-        <div className="container">
-            <h3>Edit a subject</h3>
+        <div className="container mt-3">
+            <h3 className="d-flex justify-content-center">Edit a subject</h3>
             <form onSubmit={ submitForm }>
                 <div className="form-group"> 
                     <label> Subject name: </label>
@@ -65,8 +65,8 @@ export default function CreateSubject(props) {
                         onChange = { handleProfessorChange }/>
                 </div>
 
-                <div className="form-group">
-                    <input type="submit" value="Update Subject" className = "btn btn-primary"/>
+                <div className="form-group d-flex justify-content-center mt-3">
+                    <input type="submit" value="Update Subject" className = "btn btn-warning"/>
                 </div>
             </form>
         </div>
