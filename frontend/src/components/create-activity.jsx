@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import DatePicker from 'react-datepicker';
 import axios from 'axios'
 
-export default function EditActivity(props) {
+export default function CreateActivity(props) {
     // constructor
     const date = new Date()
     const [subject_name, setSubjectName] = useState("");

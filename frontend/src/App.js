@@ -3,12 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
 
 import Navbar from "./components/navbar.jsx";
-import CreateActivity from "./components/create-activity.jsx";
 import ActivitiesList from "./components/activities-list.component.js";
+import CreateActivity from "./components/create-activity.jsx";
 import EditActivity from "./components/edit-activity.jsx";
-import CreateSubject from "./components/create-subject.component.js";
 import SubjectsList from "./components/subjects-list.component.js";
-import EditSubject from "./components/edit-subject.component.js";
+import CreateSubject from "./components/create-subject.jsx";
+import EditSubject from "./components/edit-subject.jsx";
 
 function App() {
   return (
